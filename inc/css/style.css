@@ -1,0 +1,411 @@
+/* Global Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Selector */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bitter', serif;
+}
+a,p,span,button,label{
+    font-family: 'Montserrat', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+/* Common Selector End */
+
+/* Header Section */
+header{
+    display: flex;
+    padding: 0px 5%;
+    justify-content: space-between;
+    background-color: #f1f3f43a;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.103);
+    align-items: center;
+}
+.leftHeader>ul{
+    display: flex;
+}
+.leftHeader>ul>li{
+    margin-right: 20px;
+}
+.headIcon{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #f89d35;
+    margin-right: 5px;
+}
+.tel{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+.mail{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+.rightHeader>ul>li{
+    display: inline-block;
+}
+.rightHeader>ul>li a{
+    margin: 0px 10px;
+}
+.social{
+    color: black;
+}
+.button .btn1{
+    border: 0px solid gray;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    background-color: #f89d35;
+}
+/* Header Section End */
+.mainHeader{
+    display: flex;
+    padding: 0.5rem 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 230px;
+    padding: 10px 0;
+}
+.mainHeader nav ul li{
+    display: inline-block;
+}
+.mainHeader nav ul li a{
+    margin: 0px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    color: black;
+}
+/* Main Header End */
+
+/* Banner Section */
+.banner{
+    background-image: url("../images/bg-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #000;
+}
+.banner .donation{
+    text-align: center;
+    padding: 115px 0px;
+}
+.banner .donation span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff!important;
+}
+.banner .donation h1{
+    font-size: 52px;
+    line-height: 62px;
+    color: #fff!important;
+}
+
+
+/* Main Section Start */
+main{
+    padding: 70px 5%;
+    display: flex;
+}
+.registrationForm{
+    flex-basis: 65%;
+    padding: 30px;
+    background-color: #EAEAEA;
+}
+.registrationForm>h2{
+    font-size: 36px;
+    line-height: 58px;
+    color: #232323;
+}
+.registrationForm>p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    color: #6c757d;
+    margin: 20px 0;
+}
+.donationPart{
+    display: flex;
+}
+.donationPart>h3{
+    margin-right: 70px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    color: #232323;
+}
+.donationDetails ul li label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #464646;
+}
+.donationDetails ul li{
+    margin: 5px 0;
+}
+.donationDetails ul li span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
+.amount>span{
+    margin-right: 30px;
+}
+.number{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+.paymentMethod{
+    margin: 25px 0;
+}
+.paymentMethod li{
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: #fff;
+    padding: 10px 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.paymentMethod li a{
+    margin: 20px;
+    padding: 20px 0;
+}
+.bank{
+    margin: 0px -5px;
+}
+.paymentMethod li a i,span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #464646;
+}
+.registrationForm>h3{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    color: #232323;
+    margin: 10px 0;
+}
+.registrationForm>h4{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 35px;
+    color: #232323;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+.credential label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
+.credential .card{
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid transparent;
+}
+.credential ul li{
+    display: inline-block;
+    width: 32.5%;
+}
+.credential ul li select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+}
+.duration{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+}
+.registrationForm>h5{
+    font-size: 26px;
+    line-height: 42px;
+    color: #232323;
+    margin: 60px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+.donorDetails{
+    margin-bottom: 50px;
+}
+.donorDetails .same{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+    margin-right: 60px;
+}
+.donorDetails .one{
+    margin-right: 105px;
+}
+.donorDetails .two{
+    margin-right: 97px;
+}
+.donorDetails .three{
+    margin-right: 85px;
+}
+.donorDetails .four{
+    margin-right: 85px;
+}
+.donorDetails .five{
+    margin-right: 120px;
+}
+.donorDetails .width{
+    width: 520px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    font-weight: 400;
+    font-size: 14px;
+    color: #495057;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.confess{
+    margin-top: 30px;
+}
+.registrationForm>a{
+    border: 0px solid gray;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: blueviolet;
+}
+.confession{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #464646;
+}
+
+/* Form End */
+/* Details Part */
+.details{
+    flex-basis: 35%;
+    margin-left: 40px;
+}
+.details>h4{
+    font-size: 20px;
+    line-height: 30px;
+    color: #232323;
+    margin-bottom: 20px;
+}
+.details>ol li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #464646;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 0;
+}
+.details>p{
+    font-size: 16px;
+    line-height: 27px;
+    color: #6c757d;
+}
+
+/* Footer Starts */
+footer{
+    background-color: #0A0A0A;
+    padding: 30px 5%;
+}
+.mainFooter{
+    display: flex;
+    border-bottom: 1px solid rgba(152, 140, 140, 0.103);
+}
+.mainFooter h3{
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.mainFooter p{
+    font-size: 16px;
+    line-height: 27px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+.company .common{
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff90;
+    
+}
+.company .social2{
+    color: #ffffff90;
+    border: 1px solid gray;
+    padding: 15px;
+}
+.company{
+    flex-basis: 25%;
+}
+.quickLinks{
+    flex-basis: 25%;
+    margin-left: 50px;
+}
+.subscribe{
+    flex-basis: 25%;
+}
+.gallery{
+    flex-basis: 25%;
+}
+.gallery .galleryImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.galleryImg img{
+    width: 80px;
+    margin: 8px 5px;
+}
+.copyright{
+    padding: 20px 0;
+
+}
+.copyright p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7);
+}
